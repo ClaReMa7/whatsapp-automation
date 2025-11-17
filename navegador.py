@@ -13,8 +13,15 @@ class Navegador:
         chrome_options.add_argument("--disable-notifications")
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument("--profile-directory=Default")
-        #chrome_options.add_argument("--user-data-dir=./chrome-data")
+
+        chrome_options.add_argument("--no-sandbox")
+        chrome_options.add_argument("--disable-dev-shm-usage")
+
+        chrome_options.add_argument(r"--user-data-dir=C:\Users\andre\AppData\Local\ChromeSelenium")
+
+        # Forzar la ruta del binario
+        chrome_options.binary_location = r"C:\Program Files\Google\Chrome\Application\chrome.exe"
+
 
         self.driver = webdriver.Chrome(
             service=Service(ChromeDriverManager().install()),
