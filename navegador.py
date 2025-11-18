@@ -5,6 +5,17 @@ from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
+import os
+
+# PERSISTENCIA DE SESIÓN:
+# Chrome guarda automáticamente las cookies y sesión en la carpeta --user-data-dir
+# Primera ejecución: Se pedirá escanear el QR de WhatsApp
+# Ejecuciones posteriores: Chrome recordará la sesión, sin necesidad de QR nuevamente
+# La carpeta chrome-profile/ está en .gitignore - no se sube a GitHub
+# 
+# Funciona en: Windows, Linux, Mac (rutas multiplataforma)
+
+CHROME_PROFILE_PATH = os.path.abspath("./chrome-profile")
 
 class Navegador:
     def __init__(self):
@@ -13,7 +24,16 @@ class Navegador:
         chrome_options.add_argument("--disable-notifications")
         chrome_options.add_argument("--disable-infobars")
         chrome_options.add_argument("--disable-extensions")
-        chrome_options.add_argument("--profile-directory=Default")
+        
+        # --user-data-dir especifica dónde guardar la sesión de Chrome
+        chrome_options.add_argument(f"--user-data-dir={CHROME_PROFILE_PATH}")
+
+        self.driver = webdriver.Chrome(
+            service=Service(ChromeDriverManager().install()),
+            options=chrome_options
+        )
+
+        self.wait = WebDriverWait(self.driver, 20)
 
         self.driver = webdriver.Chrome(
             service=Service(ChromeDriverManager().install()),
