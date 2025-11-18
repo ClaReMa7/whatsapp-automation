@@ -2,7 +2,7 @@
 
 import os
 from dotenv import load_dotenv
-import requests  # Importar 'requests' para consumir el API
+import requests
 from navegador import crear_navegador
 from whatsapp_web import WhatsAppWeb
 import time
@@ -45,7 +45,9 @@ def obtener_numeros_del_api():
         "573044468766",
         "573194989976",
         "573126691379", 
-        "573042836640"
+        "573042836640",
+        "573197781185",
+        "573112349080"
     ]
     return numeros_de_prueba
 
@@ -91,8 +93,9 @@ def flujo_whatsapp():
     print("[OK] PROCESO FINALIZADO")
 
     print("Proceso terminado. La ventana se cerrará en 10 segundos...")
-    print("La sesión de WhatsApp Web quedará guardada.")
+    print("La sesión de WhatsApp Web quedará guardada en chromeWhatsapp/.")
     time.sleep(10)
+    driver.quit()
 
 if __name__ == "__main__":
     flujo_whatsapp()

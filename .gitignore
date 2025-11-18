@@ -6,6 +6,7 @@
 # Carpeta de perfil de Chrome con sesión
 chrome-profile/
 chrome-data/
+chromeWhatsapp/
 
 # Python
 __pycache__/
