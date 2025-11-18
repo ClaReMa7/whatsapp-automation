@@ -8,7 +8,7 @@ from selenium.webdriver.support import expected_conditions as EC
 import os
 
 # Ruta de la carpeta de sesión de Chrome - contiene cookies y datos persistentes
-SESSION_PATH = os.path.abspath("./chromeWhatsapp")
+SESSION_PATH = os.path.abspath(os.getenv("CHROME_USER_DATA_PATH", "./chromeWhatsapp"))
 
 class Navegador:
     def __init__(self):
