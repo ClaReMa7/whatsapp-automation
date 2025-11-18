@@ -26,9 +26,9 @@ class WhatsAppWeb:
             self.wait.until(
                 EC.presence_of_element_located((By.XPATH, "//div[@role='textbox' and @data-tab='3']"))
             )
-            print("✔ WhatsApp Web cargado.")
+            print("[OK] WhatsApp Web cargado.")
         except TimeoutException:
-            print("❌ No se pudo cargar WhatsApp Web (quizás necesites escanear QR la primera vez).")
+            print("[ERROR] No se pudo cargar WhatsApp Web (quizás necesites escanear QR la primera vez).")
 
     # --- FUNCIÓN PARA INICICIAR CHAT CON UN NUMERO (NO GUARDADO) ---
     def iniciar_chat_con_numero(self, numero_telefono):
@@ -37,7 +37,7 @@ class WhatsAppWeb:
         El número debe tener el prefijo del país (ej: 57311... para Colombia)
         """
         try:
-            print(f"📌 Iniciando chat con {numero_telefono}...")
+            print(f"[INFO] Iniciando chat con {numero_telefono}...")
             url_chat = f"https://web.whatsapp.com/send?phone={numero_telefono}"
             self.driver.get(url_chat)
             
@@ -46,10 +46,10 @@ class WhatsAppWeb:
             cuadro = self.wait.until(
                 EC.presence_of_element_located((By.XPATH, "//div[@data-tab='10' and @role='textbox']"))
             )
-            print("✔ Chat abierto.")
+            print("[OK] Chat abierto.")
             return cuadro # Devolvemos el cuadro de texto para usarlo
         except TimeoutException:
-            print(f"❌ ERROR: No se pudo abrir el chat con {numero_telefono}.")
+            print(f"[ERROR] No se pudo abrir el chat con {numero_telefono}.")
             print("Posibles causas: El número no es válido, o hubo un error de carga.")
             # Esperamos a ver si hay un popup de error
             try:
@@ -59,7 +59,7 @@ class WhatsAppWeb:
                 pass # No hubo popup de error
             return None
         except Exception as e:
-            print(f"❌ Error inesperado al iniciar chat: {e}")
+            print(f"[ERROR] Error inesperado al iniciar chat: {e}")
             return None
 
     # --- ESTA FUNCIÓN ESTÁ MODIFICADA ---
@@ -80,11 +80,11 @@ class WhatsAppWeb:
             
             # Esperar un momento para que se envíe
             time.sleep(2) 
-            print("✔ Mensaje enviado.")
+            print("[OK] Mensaje enviado.")
             return True
 
         except Exception as e:
-            print(f"❌ Error enviando mensaje: {e}")
+            print(f"[ERROR] Error enviando mensaje: {e}")
             return False
 
   

@@ -31,10 +31,10 @@ def obtener_numeros_del_api():
         #     datos = respuesta.json()
         #     # Asumiendo que el API devuelve una lista de strings:
         #     numeros = [item['telefono'] for item in datos] 
-        #     print(f"✔ {len(numeros)} números obtenidos del API.")
+        #     print(f"[OK] {len(numeros)} números obtenidos del API.")
         #     return numeros
         # except Exception as e:
-        #     print(f"❌ ERROR al conectar al API: {e}")
+        #     print(f"[ERROR] Error al conectar al API: {e}")
         #     print("Usando lista de prueba como fallback.")
     
     # --- Fallback: Lista de prueba ---
@@ -56,7 +56,7 @@ def flujo_whatsapp():
     
     # 1b. Verificar si tenemos números antes de abrir el navegador
     if not numeros_aprendices:
-        print("❌ No se obtuvieron números para enviar. Terminando proceso.")
+        print("[ERROR] No se obtuvieron números para enviar. Terminando proceso.")
         return  # Salir del script si no hay nada que hacer
 
     # 2. Crear navegador (con persistencia de sesión)
@@ -88,7 +88,7 @@ def flujo_whatsapp():
         time.sleep(5)
 
     print("---------------------------------")
-    print("✨ PROCESO FINALIZADO ✨")
+    print("[OK] PROCESO FINALIZADO")
 
     print("Proceso terminado. La ventana se cerrará en 10 segundos...")
     print("La sesión de WhatsApp Web quedará guardada.")
