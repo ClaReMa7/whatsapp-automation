@@ -1,0 +1,54 @@
+2025/11/17-22:01:28.628 5f04 Reusing MANIFEST C:\Users\andre\Documents\SENA_ADSO\Etapa_Productiva\whatsapp_automation\chrome-profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/MANIFEST-000001
+2025/11/17-22:01:28.628 5f04 Recovering log #87
+2025/11/17-22:01:28.632 5f04 Reusing old log C:\Users\andre\Documents\SENA_ADSO\Etapa_Productiva\whatsapp_automation\chrome-profile\Default\IndexedDB\https_web.whatsapp.com_0.indexeddb.leveldb/000087.log 
+2025/11/17-22:01:29.673 5e20 Level-0 table #92: started
+2025/11/17-22:01:29.687 5e20 Level-0 table #92: 210849 bytes OK
+2025/11/17-22:01:29.690 5e20 Delete type=0 #87
+2025/11/17-22:01:29.691 5f04 Manual compaction at level-0 from '\x00)\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00*\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/17-22:01:30.473 472c Compacting 1@1 + 1@2 files
+2025/11/17-22:01:30.495 472c Generated table #93@1: 28770 keys, 1117359 bytes
+2025/11/17-22:01:30.495 472c Compacted 1@1 + 1@2 files => 1117359 bytes
+2025/11/17-22:01:30.496 472c compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/11/17-22:01:30.497 472c Delete type=2 #89
+2025/11/17-22:01:30.497 472c Delete type=2 #92
+2025/11/17-22:01:33.325 5128 Level-0 table #95: started
+2025/11/17-22:01:33.330 5128 Level-0 table #95: 88329 bytes OK
+2025/11/17-22:01:33.332 5128 Delete type=0 #91
+2025/11/17-22:01:33.332 5128 Manual compaction at level-0 from '\x00*\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00+\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/17-22:01:34.631 472c Compacting 1@1 + 1@2 files
+2025/11/17-22:01:34.676 472c Generated table #96@1: 29798 keys, 1154499 bytes
+2025/11/17-22:01:34.676 472c Compacted 1@1 + 1@2 files => 1154499 bytes
+2025/11/17-22:01:34.678 472c compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/11/17-22:01:46.943 5128 Manual compaction at level-0 from '\x00+\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00,\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/17-22:02:00.098 5128 Level-0 table #98: started
+2025/11/17-22:02:00.115 5128 Level-0 table #98: 341745 bytes OK
+2025/11/17-22:02:00.117 5128 Delete type=2 #93
+2025/11/17-22:02:00.117 5128 Delete type=0 #94
+2025/11/17-22:02:00.117 5128 Delete type=2 #95
+2025/11/17-22:02:00.118 472c Manual compaction at level-0 from '\x00,\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00-\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/17-22:02:01.084 5f04 Compacting 1@1 + 1@2 files
+2025/11/17-22:02:01.146 5f04 Generated table #99@1: 33205 keys, 1285609 bytes
+2025/11/17-22:02:01.146 5f04 Compacted 1@1 + 1@2 files => 1285609 bytes
+2025/11/17-22:02:01.147 5f04 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/11/17-22:02:01.148 5f04 Delete type=2 #96
+2025/11/17-22:02:01.148 5f04 Delete type=2 #98
+2025/11/17-22:02:12.794 5f04 Level-0 table #101: started
+2025/11/17-22:02:12.799 5f04 Level-0 table #101: 187637 bytes OK
+2025/11/17-22:02:12.804 5f04 Delete type=0 #97
+2025/11/17-22:02:12.804 5f04 Manual compaction at level-0 from '\x00-\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00.\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/17-22:02:13.717 472c Compacting 1@1 + 1@2 files
+2025/11/17-22:02:13.775 472c Generated table #102@1: 34328 keys, 1323860 bytes
+2025/11/17-22:02:13.775 472c Compacted 1@1 + 1@2 files => 1323860 bytes
+2025/11/17-22:02:13.781 472c compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/11/17-22:02:13.781 472c Delete type=2 #99
+2025/11/17-22:02:13.781 472c Delete type=2 #101
+2025/11/17-22:02:25.432 472c Level-0 table #104: started
+2025/11/17-22:02:25.437 472c Level-0 table #104: 195780 bytes OK
+2025/11/17-22:02:25.439 472c Delete type=0 #100
+2025/11/17-22:02:25.439 5f04 Manual compaction at level-0 from '\x00.\x00\x00\x00' @ 72057594037927935 : 1 .. '\x00/\x00\x00\x00' @ 0 : 0; will stop at (end)
+2025/11/17-22:02:26.435 5f04 Compacting 1@1 + 1@2 files
+2025/11/17-22:02:26.461 5f04 Generated table #105@1: 35169 keys, 1350482 bytes
+2025/11/17-22:02:26.462 5f04 Compacted 1@1 + 1@2 files => 1350482 bytes
+2025/11/17-22:02:26.463 5f04 compacted to: files[ 0 0 1 0 0 0 0 ]
+2025/11/17-22:02:26.464 5f04 Delete type=2 #102
+2025/11/17-22:02:26.464 5f04 Delete type=2 #104
